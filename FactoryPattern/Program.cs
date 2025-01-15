@@ -1,5 +1,8 @@
 ﻿using FactoryPattern.Factory;
 using FactoryPattern.Product;
 
-IFactory<ITransport> factory = new RoadTransportFactory<ITransport>();
+IFactory factory = new RoadTransportFactory();
 factory.CreateTransport();
+
+IFactory factory1 = new WaterTransportFactory();
+factory1.CreateTransport();
